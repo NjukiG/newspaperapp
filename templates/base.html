@@ -86,5 +86,11 @@ initial-scale=1, shrink-to-fit=no"
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script type="application/javascript">
+      $('input[type="file"]').change(function (e) {
+        var fileName = e.target.files[0].name;
+        $(".custom-file-label").html(fileName);
+      });
+    </script>
   </body>
 </html>
